@@ -10,8 +10,7 @@ LCD-35
 
 kiosk
 
-    sudo apt-get -y install --no-install-recommends xserver-xorg x11-xserver-utils xinit openbox
-    sudo apt-get -y install --no-install-recommends chromium-browser
+    sudo apt-get -y install --no-install-recommends xserver-xorg x11-xserver-utils xinit openbox chromium-browser
     
 sudo nano /etc/xdg/openbox/autostart
     
