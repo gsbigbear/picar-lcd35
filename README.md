@@ -35,7 +35,13 @@ sudo nano /etc/xdg/openbox/autostart
     # Run Chromium in kiosk mode
     chromium-browser  --noerrdialogs --disable-infobars --kiosk $KIOSK_URL
     
-sudo nano ~/.bash_profile
+    
+sudo nano /etc/xdg/openbox/environment
+
+    export KIOSK_URL=http://localhost
+
+
+sudo nano ~/.bash_rc
     
     [[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && startx -- -nocursor
     
