@@ -11,7 +11,16 @@ LCD-35
 kiosk
 
     sudo apt-get -y install --no-install-recommends xserver-xorg x11-xserver-utils xinit openbox chromium-browser
+
+auto-start
+
+    sudo raspi-config
     
+    1  system-option
+    S5 boot/autologin
+    B2 Console Autologin
+ 
+ 
 sudo nano /etc/xdg/openbox/autostart
     
     xset -dpms            # turn off display power management system
