@@ -41,6 +41,11 @@ sudo nano ~/.bash_rc
     [[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && startx -- -nocursor
 
 
+Fix - X launch
+    
+    sudo mv /usr/share/X11/xorg.conf.d/99-fbturbo.conf ~
+
+
 lcd
 
     git clone https://github.com/goodtft/LCD-show.git
