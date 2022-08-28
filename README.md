@@ -3,11 +3,6 @@
 
 LCD-35
 
-    git clone https://github.com/goodtft/LCD-show.git
-    chmod -R 755 LCD-show
-    cd LCD-show/
-    sudo ./LCD35-show
-
 kiosk
 
     sudo apt-get -y install --no-install-recommends xserver-xorg x11-xserver-utils xinit openbox chromium-browser
@@ -44,6 +39,13 @@ sudo nano /etc/xdg/openbox/environment
 sudo nano ~/.bash_rc
     
     [[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && startx -- -nocursor
-    
+
+
+lcd
+
+    git clone https://github.com/goodtft/LCD-show.git
+    chmod -R 755 LCD-show
+    cd LCD-show/
+    sudo ./LCD35-show
     
     
